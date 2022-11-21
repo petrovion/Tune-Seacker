@@ -1,0 +1,49 @@
+body {
+  box-sizing: border-box;
+  background-image: url("img/sitebg2.jpg");
+  font-family: "Lato";
+  font-size: 22px;
+  overflow: overlay;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+/* scroll tumb */
+::-webkit-scrollbar {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(28, 28, 28);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track-piece {
+  margin-top: 65px;
+  margin-bottom: 97px;
+}
+/* nav bar */
+#headnav {
+  position: fixed;
+  background-color: #060606;
+  width: 100%;
+}
+.head-list {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 50px;
+  gap: 70px;
+}
+.head-list a {
+  color: white;
+  text-decoration: none;
+}
+.head-list button {
+  color: rgb(0, 0, 0);
+  border: 1px solid #3e3f43;
+  border-radius: 8px;
+  background-color: white;
+  font-size: 22px;
+  padding: 2px;
+}
