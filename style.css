@@ -1,8 +1,11 @@
+html {
+  font-size: 62.5%;
+}
 body {
   box-sizing: border-box;
   background-image: url("img/sitebg2.jpg");
   font-family: "Lato";
-  font-size: 22px;
+  font-size: 2.2rem;
   overflow: overlay;
 }
 * {
@@ -46,8 +49,12 @@ header {
   border: 1px solid #3e3f43;
   border-radius: 8px;
   background-color: white;
-  font-size: 22px;
+  font-size: 2.2rem;
   padding: 2px;
+  cursor: pointer;
+}
+/* main content */
+main {
 }
 /* side bar */
 aside {
@@ -55,6 +62,7 @@ aside {
   background-color: rgb(0, 0, 0);
   height: 100%;
   width: 225px;
+  font-size: 2.1rem;
 }
 aside a {
   color: rgb(190, 190, 190);
@@ -75,4 +83,42 @@ aside ul li {
 .icon {
   width: 20px;
   color: white;
+}
+/* audio player */
+.music {
+  border-top: 1px #2c2c2d solid;
+  position: fixed;
+  justify-content: center;
+  width: 100%;
+  bottom: 0;
+  background-color: rgb(12, 12, 12);
+}
+.title {
+  color: white;
+  text-align: center;
+  padding: 7px;
+  padding-top: 15px;
+}
+.btns {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  padding: 15px;
+  padding-bottom: 20px;
+  color: white;
+}
+.btns span {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #3e3f43;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.btns span:active {
+  color: #3e3f43;
 }
