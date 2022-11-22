@@ -1,0 +1,51 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  box-sizing: border-box;
+  background-image: url("img/bg2.jpg");
+  background-size: cover;
+  font-family: "Lato";
+  font-size: 2.2rem;
+  overflow: overlay;
+}
+.sign-up-form {
+  width: 350px;
+  background-color: rgb(16, 16, 16);
+  border-radius: 8px;
+  border: 1px gray solid;
+  padding: 20px;
+  margin: 8% auto 0;
+  text-align: center;
+}
+img {
+  width: 100px;
+  position: absolute;
+  right: 20%;
+  bottom: 0;
+}
+.sign-up-form h1 {
+  color: white;
+  margin-bottom: 30px;
+}
+.input-box {
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px 0;
+  width: 90%;
+  border: 1px #999 solid;
+}
+button {
+  width: 40%;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+}
+a {
+  color: rgb(88, 88, 237);
+}
+p {
+  color: white;
+}
