@@ -20,13 +20,8 @@ body {
   background: rgb(28, 28, 28);
   border-radius: 10px;
 }
-::-webkit-scrollbar-track-piece {
-  margin-top: 65px;
-  margin-bottom: 97px;
-}
 /* nav bar */
 header {
-  z-index: -1;
   position: fixed;
   background-color: #060606;
   width: 100%;
@@ -55,6 +50,39 @@ header {
 }
 /* main content */
 main {
+  padding-top: 80px;
+  padding-left: 260px;
+  padding-bottom: 160px;
+}
+main h2 {
+  color: white;
+  padding: 20px;
+}
+.media-scroller {
+  display: grid;
+  gap: 25px;
+  grid-auto-flow: column;
+  padding-right: 40px;
+
+  overflow-x: auto;
+}
+.media-scroller::-webkit-scrollbar {
+  display: none;
+}
+.media-element {
+  border-radius: 8px;
+  background-color: rgb(16, 16, 16);
+  padding: 20px;
+}
+.media-element img {
+  border-radius: 8px;
+  width: 160px;
+  height: 160px;
+}
+.media-element p {
+  padding-top: 20px;
+  color: white;
+  text-align: center;
 }
 /* side bar */
 aside {
@@ -98,6 +126,18 @@ aside ul li {
   text-align: center;
   padding: 7px;
   padding-top: 15px;
+}
+.progress-bar {
+  background: #959595;
+  height: 4px;
+  border-radius: 5px;
+  margin: auto;
+  width: 40%;
+}
+.progress-bar div {
+  width: 70%;
+  height: 4px;
+  background: white;
 }
 .btns {
   position: relative;
