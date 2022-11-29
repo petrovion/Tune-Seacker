@@ -10,21 +10,23 @@
   </head>
   <body>
     <header>
-      <nav>
-        <ul class="head-list">
+      <div id="logo">
+        <a href="index.html">
+          <h2>Tune Seacker</h2>
+        </a>
+      </div>
+      <nav class="nav-bar">
+        <ul>
           <li><a href="#">FAQ</a></li>
           <li><a href="#">About</a></li>
-          <button onclick="location.href='signup.html'" type="button">
-            SIGN UP
-          </button>
         </ul>
+        <button onclick="location.href='signup.html'" type="button">
+          SIGN UP
+        </button>
       </nav>
     </header>
 
     <aside>
-      <a href="index.html">
-        <h2>Tune Seacker</h2>
-      </a>
       <ul class="nav-side">
         <li>
           <a href="#"
@@ -46,7 +48,7 @@
     </aside>
 
     <main>
-      <h2><ion-icon name="chevron-forward-outline"></ion-icon> Albums</h2>
+      <h2>Albums</h2>
       <div class="media-scroller">
         <div class="media-element">
           <img src="/img/disturbed-the-sickness.jpg" alt="" />
@@ -97,7 +99,7 @@
           <p class="album-name">Ok computer</p>
         </div>
       </div>
-      <h2><ion-icon name="chevron-forward-outline"></ion-icon> Albums</h2>
+      <h2>Albums</h2>
       <div class="media-scroller">
         <div class="media-element">
           <img src="/img/disturbed-the-sickness.jpg" alt="" />
@@ -148,7 +150,7 @@
           <p class="album-name">Ok computer</p>
         </div>
       </div>
-      <h2><ion-icon name="chevron-forward-outline"></ion-icon> Albums</h2>
+      <h2>Albums</h2>
       <div class="media-scroller">
         <div class="media-element">
           <img src="/img/disturbed-the-sickness.jpg" alt="" />
@@ -199,7 +201,7 @@
           <p class="album-name">Ok computer</p>
         </div>
       </div>
-      <h2><ion-icon name="chevron-forward-outline"></ion-icon> Albums</h2>
+      <h2>Albums</h2>
       <div class="media-scroller">
         <div class="media-element">
           <img src="/img/disturbed-the-sickness.jpg" alt="" />
@@ -250,7 +252,7 @@
           <p class="album-name">Ok computer</p>
         </div>
       </div>
-      <h2><ion-icon name="chevron-forward-outline"></ion-icon> Albums</h2>
+      <h2>Albums</h2>
       <div class="media-scroller">
         <div class="media-element">
           <img src="/img/disturbed-the-sickness.jpg" alt="" />
@@ -342,19 +344,19 @@
 
       const songList = [
         {
-          path: "Numb_Linkin_Park.mp3",
+          path: "/audio/1.mp3",
           songName: "Numb - Linkin Park",
         },
         {
-          path: "Nirvana_The_Man_Who_Sold_The_World.mp3",
+          path: "/audio/2.mp3",
           songName: "Nirvana - The Man Who Sold The World",
         },
         {
-          path: "Nirvana_Smells_Like_Teen_Spirit.mp3",
+          path: "/audio/3.mp3",
           songName: "Nirvana - Smells Like Teen Spirit",
         },
         {
-          path: "Madvillain_All_Caps.mp3",
+          path: "/audio/4.mp3",
           songName: "Madvillain - All Caps",
         },
       ];
@@ -384,7 +386,7 @@
         audio.scr = songList.path;
       }
 
-      let i = 0;
+      let i = 1;
 
       loadSong(songList[i]);
     </script>
