@@ -4,6 +4,7 @@ html {
 body {
   box-sizing: border-box;
   background-image: url("img/sitebg2.jpg");
+  background-size: cover;
   font-family: "Lato";
   font-size: 2.2rem;
   overflow: overlay;
@@ -21,49 +22,44 @@ body {
   border-radius: 10px;
 }
 /* header nav bar */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+nav {
   position: fixed;
-  background-color: #060606;
+  z-index: 1;
   width: 100%;
-}
-#logo a h2 {
+  background: #1a1a1a;
   color: white;
-  padding-left: 18px;
-  font-size: 3rem;
-}
-#logo a {
-  text-decoration: none;
-}
-@media screen and (max-width: 700px) {
-  .nav-bar ul {
-    display: none;
-    position: absolute;
-    left: -100%;
-  }
-}
-.nav-bar {
-  list-style-type: none;
-  padding: 20px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  padding-right: 4%;
-}
-.nav-bar ul {
-  display: flex;
-  list-style: none;
   justify-content: space-between;
-  gap: 50px;
-  margin-right: 50px;
 }
-.nav-bar a {
-  color: white;
+.logo {
+  padding-top: 8px;
+  padding-bottom: 3px;
+  padding-left: 7px;
+}
+.logo a {
   text-decoration: none;
+  color: white;
 }
-.nav-bar button {
+nav .mainMenu {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  list-style: none;
+}
+.nav-side-in-head {
+  left: -100%;
+  display: none;
+}
+nav .mainMenu li a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  transition: 0.2s ease;
+}
+nav .mainMenu button {
   color: rgb(0, 0, 0);
   border: 1px solid #3e3f43;
   border-radius: 8px;
@@ -71,6 +67,56 @@ header {
   font-size: 2.2rem;
   padding: 2px;
   cursor: pointer;
+}
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+nav .mainMenu .closeMenu,
+.icons i {
+  font-size: 3.5rem;
+  display: none;
+  cursor: pointer;
+  color: white;
+}
+nav .logo {
+  margin: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+@media (max-width: 700px) {
+  nav .mainMenu {
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    transition: top 1s ease 0s;
+    display: none;
+  }
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .nav-side-in-head {
+    display: block;
+  }
+  nav .openMenu {
+    display: block;
+  }
+  .icons i {
+    display: inline-block;
+    padding: 20px;
+  }
 }
 /* main content */
 main {
@@ -120,11 +166,10 @@ main h2 {
 }
 aside {
   position: fixed;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(13, 13, 13);
   height: 100%;
   width: 225px;
   font-size: 2.1rem;
-  z-index: -1;
 }
 .nav-side {
   margin-top: 40%;
@@ -152,7 +197,7 @@ aside ul li {
   justify-content: center;
   width: 100%;
   bottom: 0;
-  background-color: rgb(12, 12, 12);
+  background-color: #1a1a1a;
 }
 .title {
   color: white;
@@ -170,16 +215,29 @@ aside ul li {
 .progress-bar div {
   width: 70%;
   height: 4px;
+  background: rgb(255, 255, 255);
+}
+.progress-bar div span {
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
   background: white;
+  float: right;
+  margin-top: -6px;
+  margin-right: -9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .btns {
   position: relative;
   display: flex;
   justify-content: center;
   gap: 7%;
-  padding: 15px;
   padding-bottom: 10px;
+  margin-top: 15px;
   color: white;
+  z-index: -1;
 }
 .btns span {
   position: relative;
